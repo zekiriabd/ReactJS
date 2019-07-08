@@ -1,0 +1,27 @@
+{
+  
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "no-console": {
+       "severity": "warning",
+       "options": [
+        "log",
+        "error",
+        "debug",
+        "info",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    }   
+   
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+  
+}

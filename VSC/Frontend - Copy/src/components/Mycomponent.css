@@ -1,0 +1,20 @@
+#div1{
+    background-color:red;
+}
+.div2{
+    height: 600px;
+}
+.div3{
+    width : 600px;  
+}
+
+.mycss
+{
+    background-color:#666 !important;
+    height: 400px;
+    width : 500px;
+}
+
+#div1 .mycss{
+    background-color:blue; 
+}
