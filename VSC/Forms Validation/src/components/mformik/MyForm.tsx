@@ -17,7 +17,6 @@ export const XForm: React.SFC<{}> = () => {
 
       validationSchema={Yup.object().shape({
         email: Yup.string().email('is not correct Email').required('Required'),
-        
       })}
 
     >

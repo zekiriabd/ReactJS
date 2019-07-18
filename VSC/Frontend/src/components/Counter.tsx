@@ -13,17 +13,22 @@ interface IState{
 
 const Mycomponent = (props:IProps) => (
   <div>
+    <button onClick={props.decrement}>Decrement</button>
     <p>Current count: <strong>{props.count}</strong></p>
     <button onClick={props.increment}>Increment</button>
-    <button onClick={props.decrement}>Decrement</button>
   </div>
 );
+
+
+
+
 
 const mapStateToProps = (state:IState) =>{
   return {
     count:state.count
   }
 }
+
 const mapDispatchtoProps = (dispatch:any) => {
 return {
   decrement : ()=> dispatch({type:'DEC'}),
