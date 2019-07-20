@@ -3,21 +3,19 @@
 
 
 import * as React from 'react';
-import { Provider } from 'react-redux';
+import YForm from './components/mform/mform';
+import { XForm } from './components/mformik/MyForm';
 
-import Counter from './components/counter/Counter';
-import store from './store/Store';
 
 
 
 class App extends React.Component {
   public render() {
     return (
-      <Provider store={store}>
       <div>
-          <Counter/>
-      </div>
-      </Provider>
+          <XForm/>
+          <YForm id=""/>
+      </div>      
     );
   }
 }
